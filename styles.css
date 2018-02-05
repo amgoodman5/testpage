@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'AvenirLTStd', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -8,17 +8,26 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'AvenirLTStd', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
+@font-face {
+    font-family: AvenirLTStd;
+    src: url("./assets/AvenirLTStd-Medium.otf") format("opentype");
+}
 
+@font-face {
+    font-family: AvenirLTStd;
+    font-weight: bold;
+    src: url("./assets/AvenirLTStd-Medium.otf") format("opentype");
+}
 nav{
   background-color:white;
 }
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background: url("./assets/TopBanner-Image-Desktop.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
