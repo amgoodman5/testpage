@@ -5,8 +5,6 @@ playVideo();
 alertEmailValue()
 
 
-var text = `Intro To Process of Awakening`
-
 function playVideo(){
   let video = ".video";
   let playicon = ".playlogo";

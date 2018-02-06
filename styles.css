@@ -24,9 +24,17 @@ h6 {
 
 .header__top {
     padding: 0 3.31126%;
-    height: 60px;
+    height: 80px;
     position: relative;
     background-color: #fff;
+}
+
+.button--primary.button--last.header__action-button.header__action-button--en {
+text-decoration: none;
+}
+.button--primary.button--last.header__action-button.header__action-button--en:hover {
+background-color:#02b1b1;
+color:#fff;
 }
 
 header.masthead {
@@ -51,6 +59,15 @@ header.masthead .overlay {
 
 header.masthead h1 {
   font-size: 2rem;
+}
+
+#time{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: AvenirLTStd;
+
 }
 
 
@@ -191,40 +208,51 @@ header.masthead h1 {
       text-decoration: none;
     }
 
-.header_action {
-        width: 25%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-    }
-
-.header__action-button {
-    height: 28px;
-    font-size: 12px;
-    line-height: 28px;
-    padding: 0 20px;
-    margin-top: 0;
-    font-family: AvenirLTStd;
-}
-
-.device-bar {
+    .header_action {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-evenly;
 }
-img.bar {
-    height: 2.5em;
-}
 
-.gutters {
+
+    .header__action-button {
+        height: 28px;
+        font-size: 12px;
+        line-height: 28px;
+        padding: 6px 25px;
+        margin-top: 0;
+        height: 37px;
+        width: 135px;
+        color: white;
+            font-size: 1em;
+        font-family: AvenirLTStd;
+    }
+
+
+.device-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+}
+img.bar {
+    height: 2.5em;
+}
+
+.gutters {
+      padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+             justify-content: space-around;
 
 }
 .call-to-action {
@@ -258,20 +286,23 @@ img.bar {
 }
 
 video#video {
-  max-height: 450px;
   width: 100%;
-  margin-bottom: 50px;
+  backgound-size:100% 100%;
   overflow: hidden;
 }
-
+video{
+  background: transparent url('./assets/video-imagekevin-courtney_16x9.jpg') 50% 50%
+}
 
   .meet-teachers .container{
     padding-top: 5%;
   }
 
-  .title{
-    text-transform: uppercase;
+  .title {
+      padding-top: 5%;
 
+      text-transform: uppercase;
+      color:#5b7289;
   }
 
 #featured {
@@ -285,7 +316,7 @@ video#video {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      padding-top: 5%;
+
   }
 
 
@@ -297,12 +328,18 @@ footer.footer {
 
 
 .row.teachers {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .row.secondrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
 
