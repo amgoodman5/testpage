@@ -24,13 +24,18 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-light bg-light static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Gaia</a>
+    <nav class="navbar navbar-light header__top ">
+      <div class="header__branding">
+        <a class="navbar-brand header__logo" href="#">
+        <img src="/assets/gaia-logo-default.svg"  alt="">
+          </a>
+        </div>
+      <div class="header_action">
         <a class="button button--secondary header__action-button header__action-button--left header__action-button--en" href="#">Login</a>
         <a class="button button--primary button--last header__action-button header__action-button--en" href="#">Sign Up</a>
       </div>
     </nav>
+
 
     <!-- Masthead -->
     <header class="masthead text-white text-center">
@@ -45,12 +50,15 @@
     </header>
 
     <section class="showcase">
-      <div class="container-fluid p-0 featured-video">
+      <div class=" col-lg-8 container ">
         <!-- <div class="row no-gutters" id="video"> -->
-       <div class="col-lg-8 order-lg-2 text-white showcase-img"  id="video" src="video-asset.mp4" controls style="max-width:100%; height:auto"></div>
+       <video class="video img-responsive" poster="./assets/video-imagekevin-courtney_16x9.jpg" id="video" src="./assets/video-asset.mp4" style="height:50%; width:100%"></video>
+         <div class="play"></div>
 
         </div>
-        <div class="row no-gutters" >
+
+
+        <div class="row gutters" >
           <div class="col-lg-5 card showcase-img" >
             <img class="card-img-top" src="./assets/sunrise-yoga-logo.png" alt="Card image cap">
              <div class="card-block">
@@ -61,9 +69,10 @@
         <div class="col-lg-5 card showcase-img" >
             <img class="card-img-top" src="./assets/yoga-everyday-logo.png" alt="Card image cap">
               <div class="card-block">
-                <h4 class="card-title">Card title</h4>
-                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 <a href="#" class="btn btn-primary">Go somewhere</a>
+                 <h4 class="card-text">Daily 15-minute yoga practices Yoga Every Day is a series of 15-minute yoga practice curated for your daily and designed to help you connect and center.</h4>
+                 <div class="col-12 col-md-3">
+                   <button type="submit" class="button button--secondary button--discover">Discover The Benifets</button>
+                 </div>
               </div>
             </div>
 
@@ -81,10 +90,10 @@
             <form>
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+                  <input type="email" name='emailbox' class="form-control form-control-lg" placeholder="Enter Email Address...">
                 </div>
                 <div class="col-12 col-md-3">
-                  <button type="submit" class="button button--secondary header__action-button header__action-button--left --en">Stay connected</button>
+                  <button type="submit" class="button button--secondary button--submit">Get connected</button>
                 </div>
               </div>
             </form>
@@ -179,10 +188,10 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+      <script src="index.js"></script>
   </body>
 
 </html>

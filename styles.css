@@ -1,7 +1,7 @@
 body {
   font-family: 'AvenirLTStd', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
+a,
 h1,
 h2,
 h3,
@@ -9,7 +9,7 @@ h4,
 h5,
 h6 {
   font-family: 'AvenirLTStd', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 300;
 }
 @font-face {
     font-family: AvenirLTStd;
@@ -21,19 +21,33 @@ h6 {
     font-weight: bold;
     src: url("./assets/AvenirLTStd-Medium.otf") format("opentype");
 }
-nav{
-  background-color:white;
+.header__top {
+    padding: 0 3.31126%;
+    height: 60px;
+    position: relative;
+    background-color: #fff;
 }
+
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("./assets/TopBanner-Image-Desktop.jpg") no-repeat center center;
+  background: url("./assets/TopBanner-Image-Desktop.jpg") no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 2rem;
+  padding-top: 2rem!important;
   padding-bottom: 2rem;
+}
+.card-text h4 {
+    color: #5b7289;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 34px;
+    margin-bottom: 4px;
+    display: block;
+    min-width: 0;
+    max-width: 100%;
 }
 
 header.masthead .overlay {
@@ -50,6 +64,7 @@ header.masthead h1 {
   font-size: 2rem;
 }
 
+
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
@@ -60,46 +75,42 @@ header.masthead h1 {
   }
 }
 
-.showcase .showcase-text {
-  padding: 3rem;
-
-
+.play {
+    background-image:url("./assets/video-play-icon.png");
+    background-repeat:no-repeat;
+    width:20%;
+    height:20%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+}
+.videoText {
+   font-size:1rem;
+   position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
 
 }
-
 .showcase .showcase-img {
   min-height: 30rem;
   background-size: cover;
-  background-color:blue
+  background-color:#fde9b8;
+  padding:3%;
+  border:none;
 }
+
 
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem;
   }
 }
-
-.features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.features-icons .features-icons-item {
-  max-width: 20rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon {
-  height: 7rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon i {
-  font-size: 4.5rem;
-}
-
-.features-icons .features-icons-item:hover .features-icons-icon i {
-  font-size: 5rem;
-}
-
 
 .call-to-action {
   position: relative;
@@ -121,18 +132,8 @@ header.masthead h1 {
   top: 0;
   left: 0;
 }
-#video {
-    margin-top: 10%;
-    margin-bottom: 5%;
-    background-color: red;
-}
-
-#text-box{
-  background-color:blue
-}
-
 .button {
-    font-family: Avenir-Heavy,sans-serif;
+    font-family: Avenir-Heavy, sans-serif;
     display: inline-block;
     vertical-align: middle;
     height: 40px;
@@ -150,35 +151,68 @@ header.masthead h1 {
 
 .button--secondary {
     background-color: #5c738a;
+    font-family: AvenirLTStd;
     color: #fff;
+    margin: 0
 }
-.header__action-button {
-    padding: 0 12px;
-    margin-top: 2px;
-    margin-bottom: 0;
-    height: 24px;
-    font-size: 11px;
-    line-height: 24px;
+.button--secondary:hover {
+    color: #fff;
+    font-family: AvenirLTStd;
+    background:#475a6d;
+    text-decoration: none;
+}
+.button--submit{
+  font-family: AvenirLTStd;
+      width: 13rem;
+      border-radius:0;
+      height: 2.5rem;
+}
+.button--discover{
+  font-family: AvenirLTStd;
+      font-size: 1.2em;
+      width: 23rem;
+      border-radius:0;
+      height: 4rem;
+      padding-right:5%;
+}
+.button--submit:hover{
+  font-family: AvenirLTStd;
+      width: 13rem;
+      border: none;
 }
 .button--primary {
+  font-family: AvenirLTStd;
     background-color: #00c9c9;
     color: #000;
+     margin: 0;
 }
+.button--primary:hover {
+  font-family: AvenirLTStd;
+    background-color: #00c9c9;
+    color: #000;
+      text-decoration: none;
+    }
+
+.header_action {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+    }
+
 .header__action-button {
     height: 28px;
     font-size: 12px;
     line-height: 28px;
     padding: 0 20px;
     margin-top: 0;
+    font-family: AvenirLTStd;
 }
-.about{
-  background-color:blue;
-}
-.no-gutters {
+
+
+.gutters {
     display: flex;
     justify-content: space-evenly;
-    margin-right: 0;
-    margin-left: 0;
+
 }
 .call-to-action {
     margin-top: 5%;
@@ -192,10 +226,32 @@ header.masthead h1 {
     padding-top: 2rem;
     padding-bottom:2rem;
 }
+
+.call-to-action h2{
+    font-size: 1.5rem;
+    text-transform:uppercase;
+
+}
 .featured-video {
-    display: flex;
-    justify-content: center;
+  display:flex;
+  justify-content: center;
+
+  /* position:relative; */
   }
+
+  input.form-control.form-control-lg {
+    border-radius: 0;
+    height: 2.5rem;
+}
+
+  .video{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+
 .teacher{
     background-color: red;
     margin:1%;
